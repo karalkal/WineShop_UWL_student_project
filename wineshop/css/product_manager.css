@@ -1,0 +1,120 @@
+/* the styles for the html elements */
+
+
+header {
+    margin: 0;
+    border-bottom: 2px solid black;
+}
+
+main {
+    margin: 0;
+}
+aside {
+    float: left;
+    width: 22%;
+    margin-left: 3.5px;
+}
+nav ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+nav ul li {
+    padding-bottom: 0.5em;
+}
+section {
+    float: left;
+    width: 74%;
+    padding-bottom: 1.5em;
+}
+footer {
+    clear: both;
+    margin-top: 1em;
+    border-top: 2px solid black;
+}
+footer p {
+    text-align: right;
+    font-size: 80%;
+    margin: 1em 0;
+}
+
+ul {    
+    margin-top: 2em;
+    text-align: left; color:black;
+}
+
+li {
+    width: 80%;
+    margin-left: .5em; 
+    margin-bottom: .5em; 
+    font-size: 1.5em;
+    border: .1em solid black;    
+    border-radius: 1em ;
+    padding: .5em;
+    background-color: lightgrey;
+}
+
+
+table {width: 100%;
+    margin-top: 2em;
+    border: 3.5px solid black;
+    border-collapse: collapse;
+    background-color: lightgrey;
+
+}
+td, th {
+    border: 2px dashed black;
+    padding: .2em .5em .2em .5em;
+    /*vertical-align: top;*/
+    text-align: left;
+}
+form {
+    margin: 0;
+}
+br {
+    clear: left;
+}
+/* the styles for classes */
+.right {
+    text-align: right;
+}
+.last_paragraph {
+	margin-bottom: 2em;	
+}
+#add_product_button
+{	
+border-radius: 3.5em 3.5em 3.5em 3.5em;
+margin-top: 3.5%;
+width: 26%;
+float: right;
+font-size: 170%;
+font-weight:bold;
+text-align: center;
+color: black;
+padding: .2em .2em .2em .2em ;
+background-color: hsla(360, 100%, 100%, 0.80);
+border: .14em solid black;
+}
+
+#add_product_button:hover
+{background-color: black;}
+
+
+/********************************************************************
+* Additional styles for the Product Manager application
+********************************************************************/
+#add_product_form {
+    margin: .5em 0 1em;
+}
+#add_product_form label {
+    width: 6em;
+    padding-right: 1em;
+    padding-bottom: .5em;
+    float: left;
+}
+#add_product_form input {
+    float: left;
+}
+#add_product_form input[text] {
+    width: 15em;
+}

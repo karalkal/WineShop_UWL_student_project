@@ -1,0 +1,207 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    background:hsla(360, 100%, 100%, 0.62); 
+/*border-style: ridge; border-width: 11px; border-color: darkred;*/
+    background-color: hsla(360, 100%, 100%, 0.40);
+    border-top: 2px solid #7a5117;
+    border-left: 2px solid #7a5117;
+    border-right: 2px solid #7a5117;
+    box-shadow: 0px 0px 10px 20px hsla(360, 100%, 100%, 0.40);
+	border-radius: 2.5em 2.5em 0px 0px; /*for the shadow only*/
+    margin: 2% auto;
+    width: 80%;
+	font-family: Arial, sans-serif;
+	font-size:12px;
+}
+
+header { height:280px; 
+    border-bottom: 2px solid #7a5117;
+}
+#div_right {float: right; width: 20%; text-align: right;}
+#div_left {float: left;  width: 20%; margin: 1em;}
+
+#regORlogon_button
+{ margin: 0 .5em .5em 0;
+width: 70%;
+border-radius: 3.5em 3.5em 3.5em 3.5em;
+font-size: 170%;
+font-style:italic;
+font-weight:bold;
+text-align: center;
+color: black;
+padding: .4em 1.3em .4em 1.3em ;
+background-color: hsla(40, 100%, 41%, 0.66);
+border: .14em solid black;
+}
+
+/*for the slideshow*/
+.mySlides {display:none;
+    border-style: ridge; border-width: 17px; border-color: hsla(40, 100%, 41%, 0.66); border-radius: 31px; margin: 1em auto; width: 53%;
+     }
+
+nav {
+    font-size: 130%;
+        margin: 0 auto;
+text-align: center;
+}
+
+h1 {text-align: center;
+font-size: 4em;}
+
+
+/* The styles for the operation of the 2-tier navigation menu */
+#nav_menu ul { /* FIRST MENU*/
+
+    width: 100%;                        
+	list-style: none;
+    margin: 0;
+	padding: 0;
+    position: relative;				    /* So the first submenu can be positioned within the main menu */
+}
+#nav_menu ul li { /* FIRST (horizontal) MENU ITEMS*/
+    margin-top: 1%;
+    margin-bottom: 0;
+    margin-left: 1%;
+	float: left; 
+    width: 23.75%; }
+
+#nav_menu ul ul { /* SECOND MENU*/
+ display: none; /* Don't display submenus until hover of li */
+ position: absolute;
+ top: 100%; /* Position submenu (100% from the top of the bar) bottom of main menu */
+} 				
+#nav_menu > ul::after {  
+	content: "";
+	display: block;
+	clear: both;
+        margin: 0;
+
+}
+
+#nav_menu ul ul li {  /*SECOND MENU ITEMS/SUBMENU ITEMS */
+    float: none; /* Display submenus  vertically */
+    margin: 0;
+} 
+
+#nav_menu ul li:hover > ul { /* Select ul child of li element */
+ display: block; } /* Display submenu on hover of li element */ 
+/* The styles for the formatting of the 2-tier navigation menu */
+
+
+#nav_menu ul li a { /*links for main menu*/
+	text-align: center;
+	display: block;
+	padding: 1em 0;
+    background: linear-gradient(to bottom right, hsla(40, 82%, 13%, 1), hsla(40, 76%, 64%, 1));
+	border: .2em solid grey;
+    border-radius: 2em 2em 0em 0em;
+    color: white;
+    font-size: 130%;
+	font-weight: bold;
+}
+
+
+#nav_menu ul ul li a { /*links for submenu*/
+	text-align: center;
+	display: block;
+	padding: 1em 0;
+	/*border-color: red*/
+    background: linear-gradient(to bottom right, hsla(40, 76%, 24%, 1), hsla(40, 76%, 64%, 1));
+	border: .2em solid black;
+    border-radius: 0em 0em 0em 0em;
+    color: white;
+    font-size: 100%;
+	font-weight: bold;
+}
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+	background: none;
+    color: black;
+    background-color: white;
+    border: .2em solid black;
+}
+
+#nav_menu ul li a.current {
+	color: white !important;
+}
+
+#mobilemenu {
+	display: none;
+}
+
+#teammembers{
+width: 44%; float: left; padding: 0 2.6%; border-bottom: 4.4px dotted #7a5117; 
+}
+
+#memberbio {font-size: 1.7em;}
+
+.container_index {
+    display: flex;
+    justify-content:space-between;
+
+
+
+
+/* media queries */
+/* tablet portrait to standard 960 */
+@media only screen and (max-width: 959px) {
+#nav_menu ul li a {
+	font-size: .875em;                      /* 14 / 16 */
+}
+}
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {
+/* clear the nav menu and display mobilemenu*/
+#nav_menu {
+	display: none;
+}
+#mobilemenu {
+	display: block;
+}
+.slicknav_menu {
+	background-color: hsl(207, 44%, 25%)!important;	
+}
+body {
+	background-color: hsla(360, 100%, 100%, 0.33);
+
+	width: 100%;                           /* full width of screen */
+	margin: 0;                             /* no margins */
+	border: none;                          /* no border */
+}
+
+
+img {width: 44%;
+margin: .1%;
+}
+}
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) {
+
+/* clear the nav menu and display mobilemenu*/
+#nav_menu {
+	display: none;
+}
+#mobilemenu {
+	display: block;
+}
+.slicknav_menu {
+	background-color: hsl(207, 44%, 25%)!important;	
+}
+body {
+	background-color: hsla(360, 100%, 100%, 0.33);
+
+	width: 100%;                           /* full width of screen */
+	margin: 0;                             /* no margins */
+	border: none;                          /* no border */
+		}
+	
+	
+img {width: 86%;
+margin-bottom: 1%;
+}
+
+
+
+

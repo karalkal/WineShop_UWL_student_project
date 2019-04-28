@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html style="background-image: url(images/background/1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;">
+
+<head>
+<title>THE WINE SHOP</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--will enable Responsive Web Design later-->
+<meta name="description" content="A student project for an online wine shop">
+<meta name="keywords" content="wine shop, wine store, order wine online, vintage wine, fine wine">
+
+ <!--FAVICON BELOW-->
+<link rel="shortcut icon" href="favicon.ico"> 
+    
+<link rel="stylesheet" href="css/mainmenu.css" type="text/css" media="all">
+   
+ <link rel="stylesheet" href="css/slicknav.css">
+    	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    	<script src="js/jquery.slicknav.min.js"></script>
+		<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+    	});
+    	</script>
+</head>
+    
+<body style="height: 1300px">
+<!-- Top -->
+<header>
+    <div id="div_left">
+          <img src="images/icon.bmp" height="240px" width="240px">
+    </div>
+    
+    <div id="div_right">
+        <a href="basket.php">    
+        <button  id="regORlogon_button" type="button">Basket</button>
+        </a>
+        
+        <a href="email_form.html">    
+        <button  id="regORlogon_button" type="button">Contact Us</button>
+        </a>  
+                
+        <a href="new_user_registration.html">    
+        <button  id="regORlogon_button" type="button">Register</button>
+        </a>
+        
+        <a href="login1.html">    
+        <button  id="regORlogon_button" type="button">Log In</button>
+        </a> 
+        </div>
+    
+    <!--SLIDESHOW CODE IS BELOW-->    
+        <img class="mySlides" src="images/slideshow/1.jpg">
+        <img class="mySlides" src="images/slideshow/2.jpg" >
+        <img class="mySlides" src="images/slideshow/3.jpg">
+        <img class="mySlides" src="images/slideshow/4.jpg">  
+      
+             <script type="text/javascript" src="js/slideshow.js"></script>
+    
+    
+  </header>
+    
+    <nav id="mobilemenu"> </nav>
+   
+<nav id="nav_menu">
+    		<ul>        
+               
+                <li><a href="wine_range.php">browse whole range</a>
+                    
+                </li>
+                
+                <li><a href="#">select by type</a>
+                 <ul>
+                        <li><a href="reds.php">Red</a></li>
+                        <li><a href="whites.php">White</a></li>
+                        <li><a href="rose.php">Rose</a></li>
+                        <li><a href="sparkling.php">Sparkling</a></li>
+                </ul>
+                
+                </li>
+                        
+                <li><a href="#">select by country of origin</a> 
+                <ul>
+                        <li><a href="france.php">France</a></li>
+                        <li><a href="italy.php">Italy</a></li>
+                        <li><a href="spain.php">Spain</a></li>
+                        <li><a href="portugal.php">Portugal</a></li>
+                        <li><a href="australia.php">Australia</a></li>
+                        <li><a href="rest.php">Rest of World</a></li>
+                </ul>
+                </li>
+                
+    		<li class="lastitem"><a href="#">select by price range</a> 
+            <ul>
+                        <li><a href="upto50.php">Below £50</a></li>
+                        <li><a href="50to100.php">£50 to £100</a></li>
+                        <li><a href="100to150.php">£100 to £150</a></li>
+                        <li><a href="over150.php">Over £150</a></li>
+                </ul>    				
+    			</li>         
+    		</ul>
+    	</nav>
+<main>
+<h2 style="font-style: italic; text-align: center; font-size: 2em"> I'm a wine enthusiast. The more wine I drink, the more enthusiastic I get.</h2>
+
+<h1 style="font-size: 3.1em; text-align: center; border-top: 4.4px dotted #7a5117; color: #7a5117; margin: 20px  0 0 0 ;"> Our Team: </h1>
+
+<div class="container_index">
+    <div id="teammembers">
+        <img src="images/faces/buffon.jpg" alt="teammember1" style="float: left; width:170px; height:170px; margin-right: 15px; margin-top: 24px; border: 2px solid black;">
+            <p id="memberbio"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    </div>
+
+    <div id="teammembers">
+        <img src="images/faces/ronaldo.jpg" alt="teammember1" style="float: left; width:170px; height:170px; margin-right: 15px; margin-top: 24px; border: 2px solid black;">
+        <p id="memberbio"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+
+    </div>
+
+
+    <div id="teammembers">
+        <img src="images/faces/eden.jpg" alt="teammember1" style="float: left; width:170px; height:170px; margin-right: 15px; margin-top: 24px; border: 2px solid black;">
+            <p id="memberbio"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    </div>
+
+    <div id="teammembers">
+        <img src="images/faces/diego.jpg" alt="teammember1" style="float: left; width:170px; height:170px; margin-right: 15px; margin-top: 24px; border: 2px solid black;">
+        <p id="memberbio"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+
+    </div>
+</div>
+    
+    
+</main>
+    
+
+</body>
+</html>
